@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Ansible</title>
+  <base href="../../../../">
+  <meta id="root-path" root-path="../../../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">DEV_OPS</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="personal"><span class="tree-item-title">Personal</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="personal/it"><span class="tree-item-title">IT</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="personal/it/projects"><span class="tree-item-title">Projects</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="personal/it/projects/course"><span class="tree-item-title">Course</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/course/httpd-+-wordpress.html"><span class="tree-item-title">HTTPD + Wordpress</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/course/jenkins-obsidian-pipeline.html"><span class="tree-item-title">Jenkins Obsidian pipeline</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/course/vprofile.html"><span class="tree-item-title">Vprofile</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="personal/it/projects/small-ones"><span class="tree-item-title">small ones</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/small-ones/dut-configuration.html"><span class="tree-item-title">DUT Configuration</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/small-ones/git-hub-obsidian-sync.html"><span class="tree-item-title">Git Hub Obsidian sync</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/small-ones/guacamole.html"><span class="tree-item-title">Guacamole</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/small-ones/nginx-with-docker.html"><span class="tree-item-title">nginx with docker</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/projects/small-ones/vnc-xfce-4.html"><span class="tree-item-title">VNC xfce-4</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="personal/it/technologies"><span class="tree-item-title">Technologies</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="personal/it/technologies/devops"><span class="tree-item-title">DevOps</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="personal/it/technologies/devops/aws"><span class="tree-item-title">AWS</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/aws/alias-user.html"><span class="tree-item-title">Alias user</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="personal/it/technologies/devops/teoria"><span class="tree-item-title">Teoria</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/teoria/basic-term.html"><span class="tree-item-title">Basic Term</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/ansible.html"><span class="tree-item-title">Ansible</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/docker.html"><span class="tree-item-title">Docker</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/github.html"><span class="tree-item-title">GitHub</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/jenkins.html"><span class="tree-item-title">Jenkins</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/networking.html"><span class="tree-item-title">Networking</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/devops/vagrant.html"><span class="tree-item-title">Vagrant</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="personal/it/technologies/linux"><span class="tree-item-title">Linux</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="personal/it/technologies/linux/basics.html"><span class="tree-item-title">Basics</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="personal/personal-pc-fresh-configuration.html"><span class="tree-item-title">Personal PC Fresh configuration</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="personal/todo.html"><span class="tree-item-title">TODO</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;" tabindex="-1">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <h1 data-heading="Install" id="Install">Install</h1>
+          </div>
+          <div>
+            <p>Wymagane są python i SSH lub winrm i powershell dla Windowsa.</p>
+          </div>
+          <div>
+            <pre class="language-bash" tabindex="0"><code class="language-bash is-loaded"><span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> software-properties-common
+<span class="token function">sudo</span> apt-add-repository --yes --update ppa:ansible/ansible
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> ansible
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <h1 data-heading="Creating inventory" id="Creating_inventory">Creating inventory</h1>
+          </div>
+          <div>
+            <p>the default inventory of ansible is in <code>/etc/ansible/hosts</code><br>
+              Here is a sample one to show how to use it</p>
+          </div>
+          <div>
+            <pre class="language-yaml" tabindex="0"><code class="language-yaml is-loaded"><span class="token key atrule">all</span><span class="token punctuation">:</span>
+  <span class="token key atrule">children</span><span class="token punctuation">:</span>
+    <span class="token key atrule">d-r01</span><span class="token punctuation">:</span>
+      <span class="token key atrule">hosts</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.147.121</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.161</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.113</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.209</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.211</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.213</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.215</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.217</span><span class="token punctuation">:</span>
+        <span class="token key atrule">10.237.146.219</span><span class="token punctuation">:</span>
+  <span class="token key atrule">vars</span><span class="token punctuation">:</span>
+    <span class="token key atrule">ansible_user</span><span class="token punctuation">:</span> test
+    <span class="token key atrule">ansible_ssh_pass</span><span class="token punctuation">:</span> test
+    <span class="token key atrule">ansible_remote_tmp</span><span class="token punctuation">:</span> /tmp
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div class="admonition-parent admonition-caution-parent">
+            <div class="callout admonition admonition-caution admonition-plugin " style="--callout-color: 255, 145, 0;" data-callout="caution" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" class="svg-inline--fa fa-exclamation-triangle fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Caution</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>If you are using credentials instead of keys you need to turn of key checking in /etc/ansible/ansible.cfg. To do that paste this</p>
+                <p>[defaults]<br>
+                  host_key_checking = False</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Różne syntaxy hostów" id="Różne_syntaxy_hostów" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Różne syntaxy hostów
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230604225224.png" src="Pasted image 20230604225224.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230604225224.png" src="lib\media\pasted-image-20230604225224.png"></span></p>
+          </div>
+          <div>
+            <p>Dobrą praktyką jest umieszczanie różnych grup z ich zmiennymi w innych plikach niż robienie jednego wielkiego</p>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <h1 data-heading="Yaml basics" id="Yaml_basics">Yaml basics</h1>
+          </div>
+          <div>
+            <p>Tworzenie zmiennych lub parametrów dla ansible w formie pojedyńczej zmiennej lub listy</p>
+          </div>
+          <div>
+            <pre><code>name: cos1
+
+names:
+  - cos1
+  - cos2
+  - cos3
+
+names: [cos1, cos2, cos3]
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Zagniezdzenie zmiennej w stringu</p>
+          </div>
+          <div>
+            <pre><code>name_output: "{{name}}"
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <h1 data-heading="Creating a playbook" id="Creating_a_playbook">Creating a playbook</h1>
+          </div>
+          <div>
+            <p>Playbooks are yaml files that are run with <code>ansible-playbook</code> command</p>
+          </div>
+          <div>
+            <p>Here is a sample playbook that will get kernel and OS versions from all hosts</p>
+          </div>
+          <div>
+            <pre class="language-yaml" tabindex="0"><code class="language-yaml is-loaded"><span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Retrieve Kernel and OS Version
+  <span class="token key atrule">hosts</span><span class="token punctuation">:</span> all
+  <span class="token key atrule">gather_facts</span><span class="token punctuation">:</span> yes
+
+  <span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Get Kernel Version
+      <span class="token key atrule">command</span><span class="token punctuation">:</span> uname <span class="token punctuation">-</span>r
+      <span class="token key atrule">register</span><span class="token punctuation">:</span> kernel_output
+      <span class="token key atrule">changed_when</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Get OS Version
+      <span class="token key atrule">command</span><span class="token punctuation">:</span> lsb_release <span class="token punctuation">-</span>d <span class="token punctuation">-</span>s
+      <span class="token key atrule">register</span><span class="token punctuation">:</span> os_output
+      <span class="token key atrule">changed_when</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Display Kernel and OS Version
+      <span class="token key atrule">debug</span><span class="token punctuation">:</span>
+        <span class="token key atrule">msg</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token string">"Kernel Version: {{ kernel_output.stdout }}"</span>
+          <span class="token punctuation">-</span> <span class="token string">"OS Version: {{ os_output.stdout }}"</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>To run a playbook you can use this command that will also use <code>-l</code> to limit the <code>hosts: all</code> statement in our code</p>
+          </div>
+          <div>
+            <pre class="language-bash" tabindex="0"><code class="language-bash is-loaded">ansible-playbook -l d-r01 version.yaml
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <h1 data-heading="Ansible.cfg" id="Ansible.cfg">Ansible.cfg</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230604225818.png" src="Pasted image 20230604225818.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230604225818.png" src="lib\media\pasted-image-20230604225818.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Setting up AWX" id="Setting_up_AWX">Setting up AWX</h1>
+          </div>
+          <div>
+            <p><a rel="noopener" class="external-link" href="https://computingforgeeks.com/how-to-install-ansible-awx-on-ubuntu-linux/" target="_blank">https://computingforgeeks.com/how-to-install-ansible-awx-on-ubuntu-linux/</a></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content">
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Install"><span class="tree-item-title">Install</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Creating_inventory"><span class="tree-item-title">Creating inventory</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Różne_syntaxy_hostów"><span class="tree-item-title">Różne syntaxy hostów</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Yaml_basics"><span class="tree-item-title">Yaml basics</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Creating_a_playbook"><span class="tree-item-title">Creating a playbook</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Ansible.cfg"><span class="tree-item-title">Ansible.cfg</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Setting_up_AWX"><span class="tree-item-title">Setting up AWX</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
